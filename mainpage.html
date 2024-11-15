@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessPro - Your Fitness Companion</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional Styling */
+        .hero-bg {
+            background: url('https://source.unsplash.com/1600x900/?fitness,gym') no-repeat center center;
+            background-size: cover;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800 hover:text-indigo-500">FitnessPro</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#programs" class="text-gray-800 hover:text-indigo-500">Programs</a>
+                <a href="#features" class="text-gray-800 hover:text-indigo-500">Features</a>
+                <a href="#testimonials" class="text-gray-800 hover:text-indigo-500">Testimonials</a>
+                <a href="#contact" class="text-gray-800 hover:text-indigo-500">Contact</a>
+            </div>
+            <a href="signup.html" class="bg-indigo-500 text-white px-4 py-2 rounded-md shadow hover:bg-indigo-600">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex items-center justify-center text-center text-white relative">
+        <div class="overlay absolute inset-0"></div>
+        <div class="z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transform Your Fitness Journey</h1>
+            <p class="text-lg md:text-xl mb-6">Achieve your fitness goals with personalized plans and expert guidance.</p>
+            <a href="main.html" class="bg-indigo-500 text-white px-6 py-3 rounded-md shadow-md hover:bg-indigo-600">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x300/?yoga" alt="Yoga" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Yoga for Mind and Body</h3>
+                        <p class="text-gray-600">Improve flexibility and mental well-being with our guided yoga sessions.</p>
+                        <a href="#" class="text-indigo-500 hover:text-indigo-600 mt-4 block">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x300/?workout" alt="Workout" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">High-Intensity Workouts</h3>
+                        <p class="text-gray-600">Burn calories and build strength with our high-energy workouts.</p>
+                        <a href="#" class="text-indigo-500 hover:text-indigo-600 mt-4 block">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x300/?nutrition" alt="Nutrition" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Personalized Nutrition Plans</h3>
+                        <p class="text-gray-600">Fuel your body with custom meal plans tailored to your goals.</p>
+                        <a href="#" class="text-indigo-500 hover:text-indigo-600 mt-4 block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">What Our Users Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 shadow-md rounded-lg p-6 text-center">
+                    <p class="text-gray-600 italic mb-4">"FitnessPro changed my life! I've never felt healthier."</p>
+                    <h3 class="text-lg font-semibold">- Sarah M.</h3>
+                </div>
+                <div class="bg-gray-100 shadow-md rounded-lg p-6 text-center">
+                    <p class="text-gray-600 italic mb-4">"The nutrition plans are amazing and easy to follow!"</p>
+                    <h3 class="text-lg font-semibold">- James D.</h3>
+                </div>
+                <div class="bg-gray-100 shadow-md rounded-lg p-6 text-center">
+                    <p class="text-gray-600 italic mb-4">"I've achieved my fitness goals faster than I imagined."</p>
+                    <h3 class="text-lg font-semibold">- Emily R.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="signup" class="py-12 bg-indigo-500">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h2 class="text-3xl font-bold mb-6">Join the FitnessPro Community Today!</h2>
+            <p class="mb-6">Take the first step towards a healthier and fitter you. Sign up now and start your journey!</p>
+            <a href="#" class="bg-white text-indigo-500 px-6 py-3 rounded-md shadow-md hover:bg-gray-100">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-center text-white">
+        <p>&copy; 2024 FitnessPro. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
